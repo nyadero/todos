@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".NewTask">
+
+   <Toolbar
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/purple_700">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/img_save_note"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_baseline_check_24"
+               android:layout_alignParentEnd="true"
+               android:padding="8dp"
+               app:tint="@color/white"/>
+
+       </RelativeLayout>
+   </Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <EditText
+            android:id="@+id/edt_task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Title"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@color/gray"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_task_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_task_title"
+            android:background="@color/gray"
+            android:layout_marginTop="15dp"
+            android:padding="8dp"
+            android:inputType="textMultiLine"
+            android:hint="Task details"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
